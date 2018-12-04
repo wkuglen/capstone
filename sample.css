@@ -1,0 +1,13 @@
+#idChild {
+    margin: 10px;
+    border: 1px black solid;
+    text-decoration: none;
+}
+.another {
+    padding-top: 100px;
+    text-decoration: line-through;
+
+}
+#container {
+color: green;
+}
