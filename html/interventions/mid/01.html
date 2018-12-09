@@ -5,6 +5,7 @@
         <title>20-20</title>
 
         <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/prism.css">
         <link rel="stylesheet" href="../../css/styles.css">
     </head>
     <body>
@@ -26,6 +27,64 @@
             <div class="midScene">
                 <img src="../../images/mid/01/01_mid_window2.png" alt="">
             </div>
+
+            <h3>Why it was selected</h3>
+            <h3>Reception & Criticism</h3>
+            <h3>AppleScript Code:</h3>
+            <pre class="preWrap"><code class="language-applescript">-- (c) 2018 Will Kuglen
+on idle
+	my lookAway()
+	return 60
+end idle
+
+on lookAway()
+	set waitDelay to 3 --Change to '60' for 60s
+	set reminderFrequency to 60 --Change to '1200'(60*20) for 20min
+	set lookAwayTime to 5 --Change to '20' for 20s
+
+	delay 1
+	tell application "System Events"
+		set activeApp to name of first application process whose frontmost is true
+	end tell
+
+	set UserNotReady to true
+	repeat until UserNotReady is false
+		activate
+		beep 2
+		set Response to display dialog "Time to look away from the screen" buttons {"Wait", "Continue"} default button "Continue"
+		if button returned of Response is "Continue" then
+			set UserNotReady to false
+		else
+			delay waitDelay
+		end if
+	end repeat
+
+	set progress description to "Please continue to look away"
+	set progress additional description to "Preparing…"
+
+	set STEPS to lookAwayTime
+	set progress total steps to STEPS + 1
+	set progress completed steps to 0
+	repeat with i from 1 to STEPS
+		try
+			set progress additional description to "Seconds remaining " & lookAwayTime - i + 1
+			set progress completed steps to i
+			delay 1
+		on error thisErr
+			display alert thisErr
+			exit repeat
+		end try
+	end repeat
+
+	beep 3
+	activate application activeApp
+end lookAway
+
+on quit
+	continue quit
+end quit</code></pre>
+
+            <script src="../../js/prism.min.js" charset="utf-8"></script>
         </div>
     </body>
 </html>
