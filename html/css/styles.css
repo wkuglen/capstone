@@ -214,6 +214,13 @@ a {
     background-color: var(--high-color);
 }
 
+.colorBlock {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    display: inline-block;
+    margin: 10px 0px;
+}
 
 /* Overwrite of prism.css */
 .preWrap {

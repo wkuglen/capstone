@@ -15,9 +15,46 @@
             <h1>Intervention mid-level 03<br>
                 Color Reducer
             </h1>
-            An application that reminds you to look away from your computer every 20 minutes for 20 seconds
+            <div class="midDescription">
+                A combined experiment of low #17 (Glasses that tone down the color of screens but keep the rest of the world colorful) & low #21 (People-safe color palette). <br><br>
+                With this experiment, I took two approaches: a mathematical reduction and a filter. The mathematical reduction can either be 75% of an RGB value or 75% of the saturation in an HSL value.
+                The filter can either be a 50% opacity layer of black on top of the image or 50% reduction of saturation and contrast.
+                <br>
+                Other iterations:
+                <a href="../low/index.html#17" class="callback callbackLow">17</a>
+                <a href="../low/index.html#21" class="callback callbackLow">21</a>
             </div>
 
+            <h3>Mathematical Reduction</h3>
+            <div class="midScene" id="colorBlocks">
+                <div id="colorBlocks_red"></div>
+                <div class="midCaption">RGB Red, 75% of RGB Red, 75% saturation of Red.
+                </div>
+                <div id="colorBlocks_green"></div>
+                <div class="midCaption">RGB Green, 75% of RGB Green, 75% saturation of Green.
+                </div>
+                <div id="colorBlocks_blue"></div>
+                <div class="midCaption">RGB Blue, 75% of RGB Blue, 75% saturation of Blue.
+                </div>
+            </div>
+
+            <h3>Color Filter</h3>
+            <div class="midScene">
+                <img src="../../images/mid/03/03_mid1.png" alt="No filter" width="250px">
+                <img src="../../images/mid/03/03_mid1-overlay.png" alt="50% opacity layer of black on top of the image" width="250px">
+                <img src="../../images/mid/03/03_mid1-filter.png" alt="50% Saturation and Contrast filter" width="250px">
+                <div class="midCaption">
+                    The original image, 50% opacity layer of black on top of the image, 50% saturation and contrast filter.
+                </div>
+
+            </div>
+
+            <h3>Why it was selected</h3>
+            <h3>Reception & Criticism</h3>
+
+        </div>
+
             <script src="../../js/nav.js" charset="utf-8"></script>
+            <script src="../../js/colorReducer.js" charset="utf-8"></script>
     </body>
 </html>
