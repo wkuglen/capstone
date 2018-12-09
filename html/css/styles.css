@@ -134,3 +134,16 @@ a {
     /* float: left; */
     vertical-align: top;
 }
+
+.midScene {
+    /* margin: auto; */
+    display: block;
+    /* width: 100%; */
+    /* max-width: 100%; */
+}
+
+.midScene img {
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}
