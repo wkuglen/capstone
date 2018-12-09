@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Inconsolata|Roboto');
 
 :root {
     --title-type: 'Inconsolata', monospace;
+    /* --title-type: 'Fira Mono', monospace; */
     /* --title-type: 'Andale Mono', monospace; */
     --body-type: 'Roboto', sans-serif;
+
+    /* color */
+    --low-color: yellow;
+    --mid-color: orange;
+    --high-color: red;
 }
 
 body {
@@ -25,6 +31,25 @@ nav {
 
     border-right: 1px solid gray;
     position: fixed;
+}
+
+nav h1 {
+    text-align: right;
+}
+
+.navLow {
+    background-color: var(--low-color);
+    color: black;
+}
+
+.navMid {
+    background-color: var(--mid-color);
+    color: white;
+}
+
+.navHigh {
+    background-color: var(--high-color);
+    color: white;
 }
 
 h1, h2, h3 {
@@ -70,7 +95,7 @@ h1, h2, h3 {
     border-radius: 5px;
     font-size: 32px;
     color: black;
-    background-color: yellow;
+    background-color: var(--low-color);
 }
 
 .midLink {
@@ -78,7 +103,7 @@ h1, h2, h3 {
     border-radius: 10px;
     font-size: 48px;
     color: white;
-    background-color: orange;
+    background-color: var(--mid-color);
 }
 
 .highLink {
@@ -86,7 +111,7 @@ h1, h2, h3 {
     border-radius: 10px;
     font-size: 64px;
     color: white;
-    background-color: red;
+    background-color: var(--high-color);
 }
 
 a {
@@ -181,12 +206,12 @@ a {
 
 .callbackLow {
     color: black;
-    background-color: yellow;
+    background-color: var(--low-color);
 }
 
 .callbackHigh {
     color: white;
-    background-color: red;
+    background-color: var(--high-color);
 }
 
 
