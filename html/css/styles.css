@@ -166,6 +166,10 @@ a {
     margin-bottom: 50px;
 }
 
+.midDescription .outbound {
+    color: var(--mid-color);
+}
+
 .midScene {
     text-align: center;
     margin: auto;
