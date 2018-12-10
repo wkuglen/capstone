@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Inconsolata|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto');
 
 :root {
     --title-type: 'Inconsolata', monospace;
-    /* --title-type: 'Fira Mono', monospace; */
     /* --title-type: 'Andale Mono', monospace; */
     --body-type: 'Roboto', sans-serif;
 
@@ -212,6 +211,11 @@ a {
 .callbackLow {
     color: black;
     background-color: var(--low-color);
+}
+
+.callbackMid {
+    color: white;
+    background-color: var(--mid-color);
 }
 
 .callbackHigh {
