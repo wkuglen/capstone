@@ -6,7 +6,7 @@ for (var i=10; i <= 30; i++) {
     document.getElementById('lowHolder').insertAdjacentHTML('beforeend', '<a id="idChild" class="lowLink" href="interventions/low/index.html#'+i+'"> '+i+'</a>');
 }
 
-for (var i = 1; i <= 5; i++) {
+for (var i = 1; i < 5; i++) {
     document.getElementById('midHolder').insertAdjacentHTML('beforeend', '<a id="idChild" class="midLink" href="interventions/mid/0'+i+'.html"> 0'+i+'</a>')
 }
 
