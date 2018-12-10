@@ -219,6 +219,17 @@ a {
     background-color: var(--high-color);
 }
 
+.iterator {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.iterator a {
+    color: var(--mid-color);
+}
+
 .colorBlock {
     height: 100px;
     width: 100px;
