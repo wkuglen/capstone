@@ -51,6 +51,17 @@ nav h1 {
     color: white;
 }
 
+footer {
+    text-align: center;
+    font-style: italic;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.outbound {
+    color: var(--mid-color);
+}
+
 h1, h2, h3 {
     font-family: var(--title-type);
 }
